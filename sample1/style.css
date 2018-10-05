@@ -1665,6 +1665,7 @@ height:240px;
 
 }
 
+
 @media (max-width: 320px) {
 
 .texts h3{font-size:18px;}
@@ -1672,4 +1673,9 @@ height:240px;
 .img-overlay:hover a .texts p{display:none;}
 
 
+}
+
+i span {
+  display: inline-block;
+  margin-left: 0.5rem;
 }
