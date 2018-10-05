@@ -559,8 +559,10 @@ margin-top:8px;}
 
 ************************************/
 
-.days-open{list-style:none;
+.days-open{
+  list-style:none;
 text-align:center;
+padding: 4rem;
 margin:0;}
 .days-open li{display:inline-block;
 margin-left:24px;
