@@ -178,7 +178,7 @@ background:#007FB7;}
 .for-w-bkg{border: 1px solid #c5c5c5;
     color: #c5c5c5;}
 .for-w-bkg:hover{
-background:#2DA0E0;
+background:#071f2c;
     border: 1px solid #2DA0E0;
     color: #ffffff;
 }
@@ -790,8 +790,8 @@ margin-top:48px;
 
 .team-member img, .profile-icon img{border-radius:50%;}
 
-#team:before {
-  background-image: url('/images/bkgs/team.jpg');
+#team {
+  background-image: url("images/bkgs/team.jpg");
   color:#ffffff;
 }
 
