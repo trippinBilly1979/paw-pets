@@ -9,35 +9,35 @@
 
 
 /*************************************
- 
+
  	1. MAIN STYLE
-	
+
 	2. NAVIGATION
-	
+
 	3. INTRO
-	
+
 	4. SECTIONS COMMON STYLES
-	
+
 	5. SCHEDULE SECTION
-	
+
 	6. ABOUT SECTION
 
 	7. SERVICES SECTION
-	
+
 	8. TEAM SECTION
 
 	9. GALLERY SECTION
-	
+
 	10. PRICING SECTION
-	
+
 	11. TESTIMONIALS SECTION
-	
+
 	12. CONTACT SECTION
-	
+
 	13. BLOG SECTION
-		
+
 	14. FOOTER
-  
+
  ************************************/
 
 
@@ -66,7 +66,7 @@ em { font-style: italic; }
 .no-bottom{margin-bottom:0px;}
 .no-padding{padding:0px;}
 .column-clear{clear:both;}
-div { position:relative; } 
+div { position:relative; }
 a:active,a:focus{outline: none;
 text-decoration:none;}
 
@@ -107,7 +107,7 @@ height: 100%;
 }
 
 
-*{ 
+*{
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
@@ -124,7 +124,7 @@ color:#2DA0E0;
 	h4 {font-size:24px;}
 	h5 {font-size:16px;}
 	h6 {font-size:14px;}
-	
+
 	h1,h2,h3,h4,h5, h6{font-family: "Ubuntu", sans-serif;
 	line-height:1.2;}
 	p {font-size:16px;
@@ -134,7 +134,7 @@ color:#2DA0E0;
 .alignc{text-align:center;}
 .none{display:none;}
 
-ul, ol {margin: 0 0 16px 24px;}	
+ul, ol {margin: 0 0 16px 24px;}
 
 .menu-nav li a, .menu-nav li a:before, .nav-shrink, .img-overlay a .texts, .texts p, .exit-modal i, .btn-simple, .btn-round, .member-img a .member-overlay, .profile-social li a, .portfolio-img a .portfolio-overlay, .pricing-package, .pricing-head, .get-social li a, #submit-contact, .blog-meta li a, .blog-post h2 a, .blog-post h4 a, .btn-more, .tags a, .days-open li, .feature-overlay, .page-numbers, .widget ul li a, .widget_tag_cloud a{
 
@@ -144,7 +144,7 @@ ul, ol {margin: 0 0 16px 24px;}
    -o-transition: all 0.3s ease-in-out 0s;
    -ms-transition: all 0.3s ease-in-out 0s;
    transition: all 0.3s ease-in-out 0s;
-   
+
 }
 
 .btn-simple{color:#303030;
@@ -252,8 +252,8 @@ background:#2DA0E0;
 
 .circle-spinner:before {
   background: #ffffff;
-  animation-direction: alternate-reverse, normal; 
-  -webkit-animation-direction: alternate-reverse, normal; 
+  animation-direction: alternate-reverse, normal;
+  -webkit-animation-direction: alternate-reverse, normal;
 }
 
 .circle-spinner:after {
@@ -309,15 +309,15 @@ margin-bottom:24px;}
 2. NAVIGATION
 
  ************************************/
- 
+
 .nav-shrink{background:rgba(45,160,224,1);
 padding-bottom:16px;}
 
 .navbar-header{z-index:2;}
- 
+
 .logo{display:inline-block;
  margin-top:12px;}
- 
+
  .menu-nav{font-size:0;
 text-align:right;
 margin-top:24px;}
@@ -376,7 +376,7 @@ margin:0;
 .menu-nav ul li a {display:block;
  color:#ffffff;
  padding:8px 0 8px 16px;
- 
+
 }
 .menu-nav ul li a:hover {text-decoration:none;}
 .menu-nav ul li:hover {background:#ffffff;}
@@ -398,7 +398,7 @@ padding:0;}
 3. INTRO
 
  ************************************/
- 
+
 #slides{margin:0 auto !important;}
 .bkg-overlay {
     background: rgba(0, 0, 0, 0.7);
@@ -439,7 +439,7 @@ opacity:0.7;}
 overflow:hidden;
 position:relative;
 }
- 
+
 .img-overlay a .texts{
    height: 100%;
        width: 100%;
@@ -633,14 +633,14 @@ font-size:12px;}
    -o-transform:  translate(0px, 30px);
    -ms-transform: translate(0px, 30px);
    transform: translate(0px, 30px);
-   
+
    -webkit-backface-visibility: hidden;
 -webkit-transition: all 0.3s ease-in-out 0.2s;
    -moz-transition: all 0.3s ease-in-out 0.2s;
    -o-transition: all 0.3s ease-in-out 0.2s;
    -ms-transition: all 0.3s ease-in-out 0.2s;
    transition: all 0.3s ease-in-out 0.2s;
-   
+
    opacity:0;
 
 }
@@ -651,7 +651,7 @@ font-size:12px;}
    -o-transform:  translate(0px, 0px);
    -ms-transform: translate(0px, 0px);
    transform: translate(0px, 0px);
-   
+
    opacity:1;
 }
 
@@ -660,26 +660,26 @@ font-size:12px;}
    -o-transition: all 0.3s ease-in-out 0.4s;
    -ms-transition: all 0.3s ease-in-out 0.4s;
    transition: all 0.3s ease-in-out 0.4s;}
-   
+
 .feature-title span i{-webkit-transform:translate(0px, 0px);
    -moz-transform: translate(0px,0px);
    -o-transform:  translate(0px, 0px);
    -ms-transform: translate(0px, 0px);
    transform: translate(0px, 0px);
-   
+
    -webkit-backface-visibility: hidden;
 -webkit-transition: all 0.3s ease-in-out 0s;
    -moz-transition: all 0.3s ease-in-out 0s;
    -o-transition: all 0.3s ease-in-out 0s;
    -ms-transition: all 0.3s ease-in-out 0s;
-   transition: all 0.3s ease-in-out 0s;}   
-   
+   transition: all 0.3s ease-in-out 0s;}
+
 .feature-title span:hover i{-webkit-transform:translate(10px, 0px);
    -moz-transform: translate(10px,0px);
    -o-transform:  translate(10px, 0px);
    -ms-transform: translate(10px, 0px);
    transform: translate(10px, 0px);
-   }     
+   }
 
 /*************************************
 
@@ -707,7 +707,7 @@ margin-top:115px;
 margin-bottom:24px;
 display:block;
 line-height:1;
-}  
+}
 
 .service h5{font-weight:700;
 letter-spacing:1px;
@@ -749,7 +749,7 @@ opacity:1;}
 line-height:1;
 text-align:center;
 color:#2da0e0;
-}  
+}
 
 .service-alt h4{margin:16px 0 24px 0;
 font-weight:700;}
@@ -790,7 +790,7 @@ margin-top:48px;
 
 .team-member img, .profile-icon img{border-radius:50%;}
 
-#team-alt{background-image: url("images/bkgs/team.jpg");
+#team{background-image: url("images/bkgs/team.jpg");
 color:#ffffff;}
 
 #team-alt:after {
@@ -859,15 +859,15 @@ font-weight: 700;}
 text-decoration:none;}
 
 .member-desc .view-more i{margin-left:0;
-   
+
    -webkit-backface-visibility: hidden;
 -webkit-transition: all 0.3s ease-in-out 0s;
    -moz-transition: all 0.3s ease-in-out 0s;
    -o-transition: all 0.3s ease-in-out 0s;
    -ms-transition: all 0.3s ease-in-out 0s;
-   transition: all 0.3s ease-in-out 0s;}   
-   
-.member-desc .view-more:hover i{margin-left:10px;} 
+   transition: all 0.3s ease-in-out 0s;}
+
+.member-desc .view-more:hover i{margin-left:10px;}
 
 .mright{float:right;
 margin-right:0;
@@ -948,7 +948,7 @@ position:relative;
 }
 
 .portfolio-img img{width:100% !important;}
- 
+
 .portfolio-img a .portfolio-overlay{
    height: 100%;
        width: 100%;
@@ -1103,7 +1103,7 @@ letter-spacing:1px;}
     font-weight: 700;
 	vertical-align:sub;
 }
-	
+
 .pricing-content ul{list-style:none;
 margin:24px 0 32px 0;
 text-align:center;}
@@ -1114,14 +1114,14 @@ text-align:center;}
 .pricing-content .btn-round{
    border: 1px solid #c5c5c5;
     color: #c5c5c5;
-	
+
 }
 
 .pricing-content .btn-round:hover{
 background:#2DA0E0;
     border: 1px solid #2DA0E0;
     color: #ffffff;
-}	
+}
 
 
 /*************************************
@@ -1166,12 +1166,12 @@ html[xmlns] .slides {display: block;}
 	width: 10px;
 	height: 10px;
 	cursor: pointer;
-		
+
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
 }
- 
+
 .flex-control-nav li a.flex-active,
 .flex-control-nav li a:hover {
 	background: #ffffff;
@@ -1210,7 +1210,7 @@ color:#808080;}
    border: 1px solid #d9d9d9;
     color: #808080;
 	background:none;
-	
+
 }
 
 #submit-contact:hover, .btn-more:hover{
@@ -1339,7 +1339,7 @@ text-decoration:none;
 display:inline-block;
 border: 1px solid #808080;
 color:#808080;
-} 
+}
 .page-numbers:hover, .current, .current:hover{color:#212a2d;
 border: 1px solid #212a2d;}
 
@@ -1502,7 +1502,7 @@ border-radius:5px;
 padding:16px 32px;
 letter-spacing:1px;}
 
-	
+
 /*************************************
 
 MEDIA QUERIES
