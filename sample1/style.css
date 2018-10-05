@@ -790,12 +790,12 @@ margin-top:48px;
 
 .team-member img, .profile-icon img{border-radius:50%;}
 
-#team:before {
+.team:before {
   background-image: url("images/bkgs/team.jpg");
   color:#ffffff;
 }
 
-#team:after {
+.team:after {
     background: rgba(0, 0, 0, 0.5);
     content: "";
     height: 100%;
