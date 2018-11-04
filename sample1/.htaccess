@@ -9,5 +9,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.php [L]
 
 </IfModule>
-AddType application/x-httpd-php .html
+
 # END WordPress

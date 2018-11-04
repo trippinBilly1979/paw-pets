@@ -1,0 +1,9 @@
+# For domain: http://www.pawsitivelypetsanimalhospital.com
+
+# All robots will spider the domain
+User-agent: *
+Disallow: 
+
+# Disallow directory /cgi-bin/
+User-agent: *
+Disallow: /cgi-bin/
