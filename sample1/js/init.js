@@ -4,29 +4,29 @@
  * Author: www.matchthemes.com
  *
  */
- 
+
 (function($) {
     "use strict";
-	
+
 	$(window).load(function(){
 
 	$(".petLoading").delay(250).fadeOut({ duration: 750 });
-	
+
 	gallery_load();
 
 });
-	
+
 	$('#slides').superslides({
       animation: 'fade',
 	  play: 4000
     });
-	
+
 	// MENU NAVIGATION
-		
+
 	$('.menu-nav li a[href*=#], a.btn-go[href*=#]').click(function() {
-			
+
 		var headerH = $('.navbar').height() - 1;
-	
+
         $("html, body").animate({
             scrollTop: $($(this.hash)).offset().top - (headerH + 16)  + "px"
         }, {
@@ -36,7 +36,7 @@
 
         return false;
     });
-	
+
 	$(window).scroll(function() {
   if ($(document).scrollTop() > 100) {
     $('.navbar').addClass('nav-shrink');
@@ -44,18 +44,18 @@
     $('.navbar').removeClass('nav-shrink');
   }
 });
-	
+
 	// END MENU NAVIGATION
 
 $('.flexslider-testimonials').flexslider({
 			animation: "fade",
 			slideshow: true,
 			slideshowSpeed: 4000,
-			animationSpeed: 600, 
+			animationSpeed: 600,
 			directionNav: false,
-			controlNav: true,
+  			controlNav: false,
 			useCSS: false
-									
+
 					});
 
 $(".portfolio-img a[data-rel^='prettyPhoto']").prettyPhoto({
@@ -63,7 +63,7 @@ $(".portfolio-img a[data-rel^='prettyPhoto']").prettyPhoto({
 						autoplay_slideshow: true,
 						slideshow: 5000
 					});
-	
+
 $('#myModal').on('hidden.bs.modal', function () {
 $(this).removeData('bs.modal');
 $(this).find('.modal-body').html('');
@@ -74,7 +74,7 @@ $(this).find('.modal-body').html('');
 
 function gallery_load(){
 	"use strict";
-	
+
 	// cache container
 var portfolioItems = $('#portfolio-items');
 // initialize isotope
@@ -85,10 +85,10 @@ portfolioItems.isotope({
 
 // filter items when filter link is clicked
 $('#portfolio-filter a').click(function(){
-										
+
 	$('#portfolio-filter .current').removeClass('current');
     $(this).addClass('current');
-		
+
   var selector = $(this).attr('data-filter');
   portfolioItems.isotope({ filter: selector });
   return false;
