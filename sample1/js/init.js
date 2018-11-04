@@ -53,7 +53,7 @@ $('.flexslider-testimonials').flexslider({
 			slideshowSpeed: 4000,
 			animationSpeed: 600,
 			directionNav: false,
-  			controlNav: false,
+  		controlNav: false,
 			useCSS: false
 
 					});
