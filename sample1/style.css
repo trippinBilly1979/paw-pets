@@ -735,10 +735,16 @@ text-decoration:none;}
 
 .service{height:250px;
 background:black;
-border-right:1px solid #e0e0e0;
-border-bottom:1px solid #e0e0e0;
+border-right:1px solid darkred;
+border-bottom:1px solid darkred;
+
 text-align:center;
+color: darkred;
 overflow:hidden;}
+
+.service i {
+  color: gold;
+}
 
 .service .picons:before{font-size:64px;
 margin-top:115px;
