@@ -1815,14 +1815,14 @@ body{
 /*Business Card Css */
 .business-card {
   border: 1px solid #cccccc;
-  background: #A9A9A9;
+  background: #535959;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 10px;
   box-shadow: 10px 10px 10px black;
 }
 .profile-img {
-  height: 70%;
+  height: 80%;
   background: grey;
 }
 .name {
