@@ -1829,7 +1829,7 @@ body{
   color: black;
 }
 .job {
-  color: white;
+  color: white  ;
   font-size: 17px;
 }
 .mail {
@@ -1838,3 +1838,23 @@ body{
 
  i {
  color: white;}
+
+ /*call us button*/
+
+span.call-us {
+padding: 13px 16px;
+font-size: 14px;
+line-height: 4.30;
+border-radius: 10px;
+border-color: darkred;
+border-style: solid;
+border-
+color: gold;
+font-family: fantasy;
+background-color: #222222;
+ }
+span.call-us i {
+color: white;
+padding-right: 7px;
+
+}
