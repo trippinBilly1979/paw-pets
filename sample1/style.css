@@ -530,6 +530,7 @@ color:white;
 letter-spacing: 3px;
 line-height:1;
 }
+
 .section {
   padding-top: 6rem;
   margin-top:6rem;
@@ -544,6 +545,25 @@ line-height:1;
 	text-align:center;
 }
 
+.subsection-title {font-weight:700;
+text-transform:uppercase;
+text-align:left;
+color:gold;
+font-size:20px;
+letter-spacing: 3px;
+line-height:1;
+}
+
+.subsection-title:after {
+    content: " ";
+    display: block;
+    height: 4px;
+    margin: 24px auto;
+    width: 30px;
+	text-align:center;
+}
+
+
 .section-heading-text{text-align:center;
 font-style:italic;}
 
@@ -554,6 +574,7 @@ text-align:center;
 letter-spacing: -1px;
 line-height:1;
 color:#ffffff;}
+
 
 .small-sub-title{color: #c5c5c5;
     font-size: 14px;
@@ -1686,6 +1707,8 @@ width:auto;}
 .testimonial-desc{font-size:16px;}
 #portfolio-filter li{margin-bottom:16px;}
 
+
+
 .light-text{font-size:24px;}
 
 .service-desc {max-width: 80%;}
@@ -1858,3 +1881,6 @@ color: white;
 padding-right: 7px;
 
 }
+
+.subsectioncontainer{
+margin-bottom:40px;}
