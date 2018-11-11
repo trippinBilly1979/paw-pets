@@ -18,7 +18,7 @@
 
 	$('#slides').superslides({
       animation: 'fade',
-	  play: 4000
+	  play: 8000
     });
 
 	// MENU NAVIGATION
@@ -50,7 +50,7 @@
 $('.flexslider-testimonials').flexslider({
 			animation: "fade",
 			slideshow: true,
-			slideshowSpeed: 4000,
+			slideshowSpeed: 8000,
 			animationSpeed: 600,
 			directionNav: false,
   		controlNav: false,
@@ -61,7 +61,7 @@ $('.flexslider-testimonials').flexslider({
 $(".portfolio-img a[data-rel^='prettyPhoto']").prettyPhoto({
 						animation_speed: 'normal',
 						autoplay_slideshow: true,
-						slideshow: 5000
+						slideshow: 6000
 					});
 
 $('#myModal').on('hidden.bs.modal', function () {
