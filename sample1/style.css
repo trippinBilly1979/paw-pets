@@ -303,7 +303,7 @@ margin:0;}
     box-shadow: none;
     padding: 81px 0;
 	background:none;
-	color: darkred;
+	color: white;
 }
 
 .modal-title{
@@ -345,12 +345,12 @@ padding-bottom:16px;}
  margin-top:12px;}
 
  .menu-nav{font-size:0;
-text-align:right;
+text-align:left;
 margin-top:24px;}
-.menu-nav li{display:inline-block;
+.menu-nav li{display:inline;
 font-family:"Ubuntu", sans-serif;
-font-size:14px;
-margin-left:24px;
+font-size:16px;
+margin-left:auto;
 position:relative;}
 
 .menu-nav > li{padding-bottom: 12px;}
@@ -362,7 +362,7 @@ padding:0;}
 .menu-nav > li a:before, .menu-nav > li.active a:before{
 bottom: 0px;
     content: "";
-    height: 1px;
+    height: 0 px;
     left: 0px;
 	right: 0px;
     position: absolute;
@@ -395,7 +395,7 @@ text-align:left;
 background:#2A97D3;
 }
 
-.menu-nav ul li {display:block;
+.menu-nav ul li {display:inline-block;
 background:none;
 margin:0;
 }
@@ -408,11 +408,8 @@ margin:0;
 .menu-nav ul li:hover {background:#ffffff;}
 .menu-nav ul li:hover > a {color:#2A97D3;}
 
-.menu-nav li:hover > ul{ display: block;}
+.menu-nav li:hover > ul{ display: inline;}
 
-.menu-nav li .sub-menu li a:before{display:none;}
-
-.navbar li ul ul { left: 100%; top: 0px; }
 
 .navbar-toggle{margin-top:24px;
 margin-right:0;
@@ -618,17 +615,31 @@ margin-top:8px;}
 
 .days-open{
   list-style:none;
+  background-color: #222222;
 text-align:center;
 padding: 4rem;
 margin:0;}
+
 .days-open li{display:inline-block;
-margin-left:24px;
+margin-left:75px;
 margin-top:24px;
 font-size:12px;
 }
 
-.days-open li:hover{border:2px solid #2da0e0;
-color:#2da0e0;}
+.days-open ul {
+  display: table;
+  width: 100%;
+  list-style: none;
+}
+
+nav div ul {
+
+}
+.days-open ul li {
+display: table-cell;
+text-align: center;
+}
+
 
 .btn-circle{border:2px solid #212A2D;
 border-radius: 50%;
@@ -686,14 +697,14 @@ margin-top:-30px;
 opacity:1;}
 
 .feature-title h3{margin-bottom:16px;
-font-weight:bold; color: gold;}
+font-weight:bold; color: white;}
 .feature-title span{font-style:italic;
-  color: gold;
+  color: white;
 display:inline-block;
 font-size:12px;}
 
 .feature-title span i{font-style:italic;
-  color: gold;
+  color: white;
 display:inline-block;
 font-size:12px;}
 
@@ -771,7 +782,7 @@ border-right:1px solid darkred;
 border-bottom:1px solid darkred;
 
 text-align:center;
-color: darkred;
+color: white;
 overflow:hidden;}
 
 .service i {
@@ -1160,6 +1171,8 @@ background:#2DA0E0;
     color: #ffffff;
 }
 
+
+
 .pricing-content{padding:24px 0;}
 
 .pricing-head{background:#f5f5f5;
@@ -1208,10 +1221,7 @@ background:#2DA0E0;
 
 ************************************/
 
-#testimonials{background-image:url("images/bkgs/paws.png");
-background-color: #2da0e0;
-color:#ffffff;
-}
+
 
 .flexslider, .flexslider .slides{overflow:hidden; background-color: rgba(255,255,255,0.25);}
 
@@ -1251,9 +1261,9 @@ html[xmlns] .slides {display: block;}
 }
 
 .flex-control-nav li a.flex-active,
-.flex-control-nav li a:hover {
+/* .flex-control-nav li a:hover {
 	background: #ffffff;
-}
+} */
 
 
 .testimonial-desc{font-size:24px;
@@ -1533,8 +1543,8 @@ text-transform:uppercase;}
 
 ************************************/
 
-footer{background-image: url("images/bkgs/paws.png");
-background-color:#252F33;
+footer{
+background-color:#222222;
 color:rgba(255,255,255,0.7);
 padding:48px 0;}
 
@@ -1593,7 +1603,8 @@ MEDIA QUERIES
 
 @media (min-width: 1200px) {
 
-.days-open li{margin-left:32px;
+.days-open li{margin-left:50px;
+  margin-right:50px;
 margin-top: 0px;}
 
 .texts span{margin-top:48px;}
@@ -1632,14 +1643,14 @@ padding-left:0;}
 .menu-nav{text-align:left;
 margin-left:0;}
 
-.menu-nav li{display:block;
+.menu-nav li{
 margin:0;
 padding:0;
 font-size:16px;
 }
 .menu-nav > li > a{padding:8px 0 8px 16px;}
-.menu-nav > li:hover > a {background:#2A97D3;
-}
+/* .menu-nav > li:hover > a {background:#2A97D3;
+} */
 .menu-nav > li a:before{display:none;}
 
 .menu-nav ul {display: block;
@@ -1744,14 +1755,10 @@ height:240px;
 
 }
 
-.fa-1x {
-    font-size: 0.3em;
-    margin-top: 1em;
-    color: black;
-}
 
 div #mid {
 padding-top: 2rem;
+max-width: 500px;
 }
 
 @media (max-width: 320px) {
@@ -1771,14 +1778,11 @@ time.icon
   width: 7em;
   height: 7em;
   background-color: #fff;
-  margin: 2em auto;
   border-radius: 0.6em;
   box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
   overflow: hidden;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: rotate(0deg) skewY(0deg);
-  -webkit-transform-origin: 50% 10%;
-  transform-origin: 50% 10%;
+
+
 }
 
 time.icon *
@@ -1818,29 +1822,8 @@ time.icon span
   color: #2f2f2f;
 }
 
-time.icon:hover, time.icon:focus
-{
-  -webkit-animation: swing 0.6s ease-out;
-  animation: swing 0.6s ease-out;
-}
 
-@-webkit-keyframes swing {
-  0%   { -webkit-transform: rotate(0deg)  skewY(0deg); }
-  20%  { -webkit-transform: rotate(12deg) skewY(4deg); }
-  60%  { -webkit-transform: rotate(-9deg) skewY(-3deg); }
-  80%  { -webkit-transform: rotate(6deg)  skewY(-2deg); }
-  100% { -webkit-transform: rotate(0deg)  skewY(0deg); }
-}
 
-@keyframes swing {
-  0%   { transform: rotate(0deg)  skewY(0deg); }
-  20%  { transform: rotate(12deg) skewY(4deg); }
-  60%  { transform: rotate(-9deg) skewY(-3deg); }
-  80%  { transform: rotate(6deg)  skewY(-2deg); }
-  100% { transform: rotate(0deg)  skewY(0deg); }
-}
-
-/*Don't copy this part*/
 body{
     margin-top: 20px;
     background:black
@@ -1850,6 +1833,7 @@ body{
 .business-card {
   border: 1px solid #cccccc;
   background: #535959;
+  font-family: "Ubuntu", sans-serif;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 10px;
@@ -1862,8 +1846,8 @@ body{
 }
 
 .business-card img {
-  max-height: 300px;
-    max-width: 300px;
+  max-height: 500px;
+    max-width: 200px;
 }
 .name {
   color: black;
@@ -1884,11 +1868,12 @@ body{
 span.call-us {
 padding: 13px 16px;
 font-size: 14px;
-line-height: 4.30;
+font-family: "Ubuntu", sans-serif;
+font-weight: bolder;
+line-height: 6.30;
 border-radius: 10px;
 border-color: darkred;
 border-style: solid;
-font-family: fantasy;
 background-color: #222222;
  }
 span.call-us i {
@@ -1928,4 +1913,92 @@ font-weight: bold
 }
 
 .modal-body i {
-color: darkred;}
+color: white;}
+
+
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "untitled-font-4";
+  src:url("fonts/untitled-font-4.eot");
+  src:url("fonts/untitled-font-4.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-4.woff") format("woff"),
+    url("fonts/untitled-font-4.ttf") format("truetype"),
+    url("fonts/untitled-font-4.svg#untitled-font-4") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: "paw";
+  src:url("fonts/paw.eot");
+  src:url("fonts/paw.eot?#iefix") format("embedded-opentype"),
+    url("fonts/paw.woff") format("woff"),
+    url("fonts/paw.ttf") format("truetype"),
+    url("fonts/paw.svg#paw") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "paw" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "paw" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  font-size:275%;
+  /* color: #c7993a; */
+  color: #c7993a;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-paw-1:before {
+  content: "\61";
+
+}
+
+.my-nav {
+margin-top: 20px;
+}
+
+.paw-text {
+color:white;
+margin-top: -11rem;
+position: sticky;
+font-size:10pt;
+padding-left: 30px;
+padding-top: 15px;
+}
+
+.icon-paw-1 {
+font-size: 200%;
+}
+
+/* paw icon fine tuning*/
+
+#homePaw  {
+margin-left 1em;
+}
+
+section {
+padding-top:4em;
+}
