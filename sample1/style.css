@@ -1783,8 +1783,8 @@ time.icon
   font-size: 1em; /* change icon size */
   display: block;
   position: relative;
-  width: 7em;
-  height: 7em;
+  width: 10em;
+  height: 10em;
   background-color: #fff;
   border-radius: 0.6em;
   box-shadow: 0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
@@ -1993,6 +1993,7 @@ color: white;}
 
 .my-nav {
 margin-top: 20px;
+display:inline;
 }
 
 .paw-text {
@@ -2009,7 +2010,24 @@ input {
 }
 
 .icon-paw-1 {
-font-size: 200%;
+font-size: 1.2em;
+}
+
+.icon-paw-1-xs {
+  height: 0.5em;
+  width: 0.5em;
+}
+.icon-paw-1-sm {
+  height: 0.8em;
+  width: 0.8em;
+}
+.icon-paw-1-lg {
+  height: 1.6em;
+  width: 1.6em;
+}
+.icon-paw-1-xl {
+  height: 2em;
+  width: 2em;
 }
 
 /* paw icon fine tuning*/
@@ -2034,4 +2052,66 @@ padding-top:4em;
 ::-ms-input-placeholder { /* Microsoft Edge */
   color: whitesmoke;
   font-family: Georgia;
+}
+.inner-space hr {
+  border-top: 3px solid darkred;
+}
+
+img { 
+  margin: 0px 15px 0px 15px;
+}
+.image {
+  display: inline;
+  height:100px; 
+  width:75px;
+}
+
+.overlay {
+  position: absolute;
+  
+  top: 35px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #222222;
+}
+
+.mycontainer:hover .overlay {
+  opacity: 1;
+
+}
+
+.menu-nav .text {
+  color: white;
+  font-size: 16px;
+  font-family:Times;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.menu-nav a:hover{
+  text-decoration: none;
+}
+  .mycontainer {
+  position: relative;
+  display:inline;
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
