@@ -2115,3 +2115,7 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+div#mid { 
+  padding-left:4.7em;
+}
