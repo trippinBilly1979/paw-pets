@@ -86,7 +86,7 @@ text-decoration:none;}
 
 article, aside, figure, footer, header, hgroup, nav, section {
 position:relative;
-background: black;
+background: #222222;
 }
 
 .inner-space{padding:81px 0;}
@@ -215,13 +215,13 @@ background:#071f2c;
 .petLoading{  height: 100%;
   width: 100%;
   display: table;
-  background-color: black;
+  background-color:#222222;
   position: fixed;
   z-index: 1040;
 }
 
 #outermost-container {
-background-color: black;
+background-color: #222222;
 }
 
 .petLoading .spinner {
@@ -478,7 +478,8 @@ position:relative;
 
 .texts span{
     display: block;
-    font-size: 12px;
+    font-size: 
+    12px;
 	text-transform:uppercase;
 	margin-top:16px;}
 
@@ -536,7 +537,7 @@ line-height:1;
 .section {
   padding-top: 6rem;
   margin-top:6rem;
-  background-color: black;
+  background-color: #222222;
 }
 .section-title:after {
     content: " ";
@@ -590,6 +591,10 @@ font-style:italic;}
 
 .f-italic16{font-size:16px;
 font-style:italic;
+font-weight:bold;
+color: white;}
+
+.f-bold16{font-size:20px;
 font-weight:bold;
 color: white;}
 
@@ -667,7 +672,8 @@ white-space: normal;}
 ************************************/
 
 #about
-.about-inner{padding:10px  20px 40px 40px;}
+.about-inner{padding:10px  20px 40px 40px;
+text-align:center;  }
 
 .about-inner .section-title{text-align:left;}
 .about-inner .section-title:after{margin-left:0;
@@ -777,7 +783,7 @@ font-size:12px;}
 text-decoration:none;}
 
 .service{height:250px;
-background:black;
+background:#222222;
 border-right:1px solid darkred;
 border-bottom:1px solid darkred;
 
@@ -1268,7 +1274,7 @@ html[xmlns] .slides {display: block;}
 
 .testimonial-desc{font-size:24px;
 font-style:italic;
-color: black;
+color: #222222;
 text-align:center;
 }
 .testimonial-client{color:rgba(255,255,255,0.7);
@@ -1290,14 +1296,16 @@ text-transform:uppercase;
 padding:16px;
 border:1px solid #d9d9d9;
 border-radius:5px;
-background:#ffffff;
-color:#808080;}
+background:#808080;
+color: white;
+}
 
 #contact-form-holder label{font-weight:400;}
 
 #submit-contact, .btn-more{
    border: 1px solid #d9d9d9;
-    color: #808080;
+    color: white
+    ;
 	background:none;
 
 }
@@ -1603,8 +1611,8 @@ MEDIA QUERIES
 
 @media (min-width: 1200px) {
 
-.days-open li{margin-left:50px;
-  margin-right:50px;
+.days-open li{margin-left:30px;
+  margin-right:30px;
 margin-top: 0px;}
 
 .texts span{margin-top:48px;}
@@ -1831,14 +1839,14 @@ body{
 
 /*Business Card Css */
 .business-card {
-  border: 1px solid #cccccc;
+  border: 1px solid #222222;
   background: #535959;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Georgia", sans-serif;
   padding: 10px;
-  border-radius: 4px;
   margin-bottom: 10px;
   margin-top: 10px;
   box-shadow: 10px 10px 10px black;
+  background-image: url('images/bkgs/card-background.png');
 }
 .profile-img {
   height: 80%;
@@ -1849,12 +1857,19 @@ body{
   max-height: 500px;
     max-width: 200px;
 }
+
+
+.business-card p {
+ font-size:10px;
+}
 .name {
   color: black;
 }
 .job {
   color: white  ;
-  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6pt;
+  
 }
 .mail {
   font-size: 16px;
@@ -1989,6 +2004,10 @@ padding-left: 30px;
 padding-top: 15px;
 }
 
+input { 
+  background-color: lightgray;
+}
+
 .icon-paw-1 {
 font-size: 200%;
 }
@@ -2001,4 +2020,18 @@ margin-left 1em;
 
 section {
 padding-top:4em;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: whitesmoke;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: whitesmoke;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: whitesmoke;
+  font-family: Georgia;
 }
