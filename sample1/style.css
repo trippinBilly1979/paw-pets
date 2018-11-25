@@ -792,7 +792,7 @@ color: white;
 overflow:hidden;}
 
 .service i {
-  color: gold;
+  color: #c89b3a;
 }
 
 .service .picons:before{font-size:64px;
@@ -835,17 +835,6 @@ opacity:0;}
 .service:hover .service-desc{margin-top:32px;
 opacity:1;}
 
-
-.service-alt{text-align:center;}
-
-.service-alt .picons:before{font-size:64px;
-line-height:1;
-text-align:center;
-color:#2da0e0;
-}
-
-.service-alt h4{margin:16px 0 24px 0;
-font-weight:700;}
 
 
 #fun-facts{background-image: url("images/bkgs/paws.png");
@@ -1278,6 +1267,7 @@ color: #222222;
 text-align:center;
 }
 .testimonial-client{color:rgba(255,255,255,0.7);
+  color: #222222;
 font-family: "Ubuntu",sans-serif;
 font-size: 10px;
 letter-spacing: 1px;
@@ -1810,15 +1800,16 @@ time.icon strong
   padding: 0.4em 0;
   color: #fff;
   background-color: #000000;
-  border-bottom: 1px dashed #f37302;
-  box-shadow: 0 2px 0 #fd9f1b;
+  border-bottom: 1px dashed #c89b3a ;
+  box-shadow: 0 2px 0 #c89b3a;
 }
 
 time.icon em
 {
   position: absolute;
-  bottom: 0.3em;
+  bottom: 1.5em;
   color: #000000;
+  font-size: 16pt;
 }
 
 time.icon span
@@ -1834,7 +1825,7 @@ time.icon span
 
 body{
     margin-top: 20px;
-    background:black
+    background:#222222
 }
 
 /*Business Card Css */
@@ -1860,7 +1851,7 @@ body{
 
 
 .business-card p {
- font-size:10px;
+ font-size:12px;
 }
 .name {
   color: black;
@@ -2119,3 +2110,8 @@ img {
 div#mid { 
   padding-left:4.7em;
 }
+
+.row.moreinfo { 
+  display:none;
+}
+
