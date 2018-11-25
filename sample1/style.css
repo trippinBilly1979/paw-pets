@@ -16,7 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
  * Pet Center - HTML5 Template
  *
  * Author: www.matchthemes.com
- *
+ *j
  * Version: 1.1.0
  *
  */
@@ -347,7 +347,7 @@ padding-bottom:16px;}
  .menu-nav{font-size:0;
 text-align:left;
 margin-top:24px;}
-.menu-nav li{display:inline;
+.menu-nav li{display:inline-block;
 font-family:"Ubuntu", sans-serif;
 font-size:16px;
 margin-left:auto;
@@ -1836,6 +1836,7 @@ body{
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
+  min-height:350px; 
   box-shadow: 10px 10px 10px black;
   background-image: url('images/bkgs/card-background.png');
 }
@@ -1984,7 +1985,7 @@ color: white;}
 
 .my-nav {
 margin-top: 20px;
-display:inline;
+display:block;
 }
 
 .paw-text {
@@ -2115,3 +2116,29 @@ div#mid {
   display:none;
 }
 
+.slider {
+	overflow-y: hidden;
+	max-height: 500px; /* approximate max height */
+
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slider.closed {
+	max-height: 0;
+}
+
+a.dropdown-link { 
+  text-decoration: none;
+  color: white;
+}
+
+
+div.more-info {
+  display: none;
+}
+
+a.dropdown-link:hover + div.more-info {
+  display: block;
+}
