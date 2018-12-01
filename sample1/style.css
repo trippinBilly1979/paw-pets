@@ -412,7 +412,7 @@ margin:0;
 
 
 .navbar-toggle{margin-top:24px;
-margin-right:0;
+margin-right:15px;
 padding:0;}
 .navbar-toggle .icon-bar{background:#ffffff;}
 
@@ -799,7 +799,7 @@ overflow:hidden;}
 margin-top:115px;
 margin-bottom:24px;
 display:block;
-line-height:1;
+line-height:2;
 }
 
 .service h5{font-weight:700;
@@ -1591,7 +1591,9 @@ border-radius:5px;
 padding:16px 32px;
 letter-spacing:1px;}
 
-
+.call-us-mobile { 
+  display:none;
+}
 /*************************************
 
 MEDIA QUERIES
@@ -1745,14 +1747,29 @@ margin-right:auto;}
 	.children li.depth-9,
 	.children li.depth-10 { margin: 0 }
 
+  div#mid {
+    display:none;
+      }
+    span.call-us-mobile {
+      display:inline;
+    }
+    span.call-us { 
+      display:none;
+    }
 }
 
 @media (max-width: 568px) {
 
-  
-.intro-text{top:25%;
-width:auto;}
-
+  div#mid {
+    display:none;
+      }
+    span.call-us-mobile {
+      display:inline;
+    }
+    span.call-us { 
+      display:none;
+    }
+    
 .days-open li{margin-left:8px;}
 
 .section-title{font-size:36px; color: white;}
@@ -1769,6 +1786,16 @@ width:auto;}
 }
 
 @media (max-width: 480px) {
+
+  div#mid {
+    display:none;
+      }
+    span.call-us-mobile {
+      display:inline;
+    }
+    span.call-us { 
+      display:none;
+    }
 
 .member-img{width:240px;
 height:240px;
@@ -1787,10 +1814,7 @@ height:240px;
 }
 
 
-div #mid {
-padding-top: 2rem;
-max-width: 500px;
-}
+
 
 @media (max-width: 320px) {
 
@@ -1936,6 +1960,32 @@ color: gold;
 
 }
 
+span.call-us-mobile {
+  padding: 13px 16px;
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  line-height: 6.30;
+  border-radius: 10px;
+  border-color: darkred;
+  border-style: solid;
+  background-color: #222222;
+   }
+  span.call-us-mobile i {
+  color: white;
+  padding-right: 7px;
+  
+  }
+  
+  .call-us-mobile:hover {
+  background-color: darkred;
+  color: gold;
+  font-weight: bold;}
+  
+  .call-us-mobile i:hover {
+  color: gold;
+  
+  }
 
 .subsectioncontainer{
 margin-bottom:40px;}
@@ -2090,6 +2140,11 @@ img {
   margin: 0px 15px 0px 15px;
 }
 
+img.logoimg { 
+  margin: 0px 15px 0px 0px;
+  padding-right:10px;
+}
+
 .overlay {
   position: absolute;
   
@@ -2138,10 +2193,6 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-}
-
-div#mid { 
-  padding-left:4.7em;
 }
 
 .row.moreinfo { 
