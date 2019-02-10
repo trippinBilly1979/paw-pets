@@ -32,11 +32,10 @@ $mail->Password = 'Pawpets123';
 // Set who the email is coming from
 $mail->SetFrom('customerquestions@pawsitivelyvet.com', 'Website Admin');
 
-// Set who the email is sending to
+//Set who the email is sending to
 $mail->addAddress('dr.morgan@pawsitivelyvet.com', 'Doctor Morgan');     // Add a recipient
 $mail->addAddress('dr.dunaway@pawsitivelyvet.com', "Doctor Dunaway");               // Name is optional
-$mail->addAddress('rachelle@pawsitivelyvet.com', "Rachelle");   
-$mail->addReplyTo('info@example.com', 'Information');
+$mail->addAddress('rachelle@pawsitivelyvet.com', "Rachelle"); 
 
 // set reply to 
 $mail->addReplyTo($email, $name);
