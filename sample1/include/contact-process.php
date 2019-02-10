@@ -1,43 +1,59 @@
 <?php
+// Include the PHPMailer class
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-$recipient = "smiley0418@gmail.com";
+require 'PHPMailer/Exception.php';
+require 'PHPMailer/PHPMailer.php';
+require 'PHPMailer/SMTP.php';
+
+
+$recipient = "dr.";
+
+$from = "customerquestions@pawsitivelyvet.com";
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-if (isset($_POST['email'])) {
-	if (preg_match('(\w[-._\w]*\w@\w[-._\w]*\w\.\w{2,})', $_POST['email'])) {
-		$msg = 'E-mail address is valid';
-	} else {
-		$msg = 'Invalid email address';
-	}
+// Setup PHPMailer
+$mail = new PHPMailer();
+$mail->IsSMTP();
 
-  $ip = getenv('REMOTE_ADDR');
-  $host = gethostbyaddr($ip);
-  $mess = "Name: ".$name."\n";
-  $mess .= "Email: ".$email."\n";
-  $mess .= "Subject: ".$subject."\n";
-  $mess .= "Message: ".$message."\n\n";
-  $mess .= "IP:".$ip." HOST: ".$host."\n";
+// This is the SMTP mail server
+$mail->Host = 'smtp.startlogic.com';
+$mail->Port = 587;
 
-  $headers = "From: <".$email.">\r\n";
+// Remove these next 3 lines if you dont need SMTP authentication
+$mail->SMTPAuth = true;
+$mail->Username = 'customerquestions@pawsitivelyvet.com';
+$mail->Password = 'Pawpets123';
 
-  // if the url field is empty
-if(isset($_POST['url']) && $_POST['url'] == ''){
+// Set who the email is coming from
+$mail->SetFrom('customerquestions@pawsitivelyvet.com', 'Website Admin');
 
-  $sent = mail($recipient, $subject, $mess, $headers);
+// Set who the email is sending to
+$mail->addAddress('dr.morgan@pawsitivelyvet.com', 'Doctor Morgan');     // Add a recipient
+$mail->addAddress('dr.dunaway@pawsitivelyvet.com', "Doctor Dunaway");               // Name is optional
+$mail->addAddress('rachelle@pawsitivelyvet.com', "Rachelle");   
+$mail->addReplyTo('info@example.com', 'Information');
 
-  $text = "Thanks for contacting us! We will check your message within a few minutes.";
+// set reply to 
+$mail->addReplyTo($email, $name);
 
-echo '<xml>	<someText>'.$text.'</someText> </xml>';
+// Set the subject
+$mail->Subject = $subject;
 
-}
+//Set the message
+$mail->MsgHTML($message);
+// $mail->AltBody(strip_tags($message));
 
-
-} else {
+// Send the email
+if(!$mail->Send()) {
 	die('Invalid entry!');
-}
-
-
+} else {
+  $sent = mail($recipient, $subject, $mess, $headers);
+  $text = "Thanks for the email!  We will check the message and be in contact at our earliest convenience!";
+  echo '<xml>	<someText>'.$text.'</someText> </xml>';
+} 
 ?>

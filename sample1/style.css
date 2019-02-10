@@ -284,18 +284,22 @@ background-color: #222222;
   background: #303030;
 }
 
-
 /***** END LOADING WINDOW ******/
 
 /***** MODAL WINDOW ******/
 
-.modal{background:black;}
+.modal{background:black; height: 90%;}
 .modal-dialog{width:auto;
-margin:0;}
+margin:10;}
 
 .modal.fade .modal-dialog, .modal.in .modal-dialog {transform: none;}
 
 .modal-backdrop.in{opacity:0;}
+
+#myModal {
+  margin-left:100px;
+  margin-right:100px;
+}
 
 #myModal .modal-content {
     border: 0;
@@ -1294,7 +1298,9 @@ background:#808080;
 color: white;
 }
 
-#contact-form-holder label{font-weight:400;}
+#contact-form-holder label{font-weight:400; color: white}
+
+#output-contact {color: white}
 
 #submit-contact, .btn-more{
    border: 1px solid #d9d9d9;
@@ -1644,7 +1650,11 @@ font-size:22px;}
 
 .fact{margin:24px 0;}
 
-
+.business-card .media-body {
+  padding-top:10px;
+  display: block;
+  width: 100%;
+}
 }
 
 
@@ -1773,6 +1783,12 @@ margin-right:auto;}
     span.call-us { 
       display:none;
     }
+
+    .business-card .media-body {
+      padding-top:10px;
+      display: block;
+      width: 100%;
+    }
     
 .days-open li{margin-left:8px;}
 
@@ -1805,6 +1821,13 @@ margin-right:auto;}
 height:240px;
 }
 
+.media-body {
+  padding-top:10px;
+  display: block;
+  width: 100%;
+}
+
+
 .portfolio-overlay .portfolio-holder i{font-size:32px;}
 .portfolio-overlay .portfolio-holder h5{font-size:14px;}
 
@@ -1826,8 +1849,17 @@ height:240px;
 
 .img-overlay:hover a .texts p{display:none;}
 
+.business-card .media-body {
+  padding-top:10px;
+  display: block;
+  width: 100%;
+}
 
 }
+
+/* @media screen\0, screen\9 {	
+  .img-responsive { max-width: 12%; }
+}	 */
 
 time.icon
 {
@@ -2148,8 +2180,10 @@ img {
 img.logoimg { 
   margin: 0px 15px 0px 0px;
   padding-right:10px;
+  /* max-width:12%; */
 }
 
+.img-responsive {width: auto;}
 .overlay {
   position: absolute;
   
