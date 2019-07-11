@@ -1304,8 +1304,8 @@ color: white;
 
 #submit-contact, .btn-more{
    border: 1px solid #d9d9d9;
-    color: white
-    ;
+    color: white;
+    margin-top: 20px;
 	background:none;
 
 }
