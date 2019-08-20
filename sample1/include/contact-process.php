@@ -38,8 +38,6 @@ if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response'
 
         //Set who the email is sending to
         $mail->addAddress('dr.morgan@pawsitivelyvet.com', 'Doctor Morgan');     // Add a recipient
-        // $mail->addAddress('dr.dunaway@pawsitivelyvet.com', "Doctor Dunaway");               // Name is optional
-        // $mail->addAddress('rachelle@pawsitivelyvet.com', "Rachelle"); 
         // $mail->addAddress('smiley0418@gmail.com', "me"); 
         // set reply to 
         $mail->addReplyTo($email, $name);
